@@ -1,0 +1,49 @@
+public class mehtot1 {
+    public static void main(String[] args) {
+     mesajVer();
+     mesajVer2("Naber");
+     Scanner scn =new Scanner(System.in);
+   /*  System.out.println(toplam(25,35));
+     System.out.print("Bir sayı giriniz:");
+     int s1 = scn.nextInt();
+     System.out.print("Bir sayı giriniz:");
+     int s2 = scn.nextInt();
+     int s=toplam(25,54);
+     System.out.println("Toplam="+toplam(s1,s2));*/
+     System.out.println("Toplam="+toplam(10,20,30));
+     System.out.println("Küçük Sayı="+kucuk(12,50));
+        int number = 10;
+        int result = faktoruyol(number);
+        System.out.println(number + " sayısının faktöriyel: " + result);
+    }
+
+    private static void mesajVer() {
+        System.out.println("Bu mesaj Metot ile verildi");
+
+    }
+    private static void mesajVer2(String mesaj){
+        System.out.println(mesaj);
+    }
+    private static int toplam(int sayi1,int sayi2){
+        int sonuc;
+        sonuc = sayi1 +sayi2;
+        return sonuc;
+    }
+    private static int toplam(int sayi1,int sayi2,int sayi3){
+
+
+        return sayi1 +sayi2+sayi3;
+    }
+    private  static  int  kucuk(int s1,int s2){
+        if (s1 < s2) {
+            return s1;
+        }
+        return  s2;
+    }
+    private static  int faktoruyol(int n){
+        int result = 1;
+        for (int i = 1; i <= n; i++) {
+            result *= i;
+        }
+        return result;
+    }
